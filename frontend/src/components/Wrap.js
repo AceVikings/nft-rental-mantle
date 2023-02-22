@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { ethers, ZeroAddress, Contract } from "ethers";
+import React, { useState } from "react";
+import { ZeroAddress, Contract } from "ethers";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/Base.css";
