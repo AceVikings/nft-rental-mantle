@@ -1,10 +1,14 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Wrap from "./components/Wrap";
+import Approve from "./components/Approve";
+import Rent from "./components/Rent";
+import Unwrap from "./components/Unwrap";
 import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ethers, Contract } from "ethers";
-
+import wrapperABI from "./abis/wrapper.json";
 function App() {
   const [address, setAddress] = useState();
   const [signer, setSigner] = useState();
@@ -19,8 +23,8 @@ function App() {
       const signerProvider = new ethers.BrowserProvider(window.ethereum);
       const signer = await signerProvider.getSigner(0);
       const contract = new Contract(
-        "0xE9A78a271970E93f211b23e893c5248850408a6D",
-        factoryABI,
+        "0x1281b0F20df286C86ED78F56a6AC24c82EA3De59",
+        wrapperABI,
         signer
       );
       setSigner(signer);
@@ -47,6 +51,30 @@ function App() {
       <Navbar connectWallet={connectWallet} address={address} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route
+          path="/wrap"
+          element={
+            <Wrap contract={contract} signer={signer} address={address} />
+          }
+        />
+        <Route
+          path="/approve"
+          element={
+            <Approve contract={contract} signer={signer} address={address} />
+          }
+        />
+        <Route
+          path="/rent"
+          element={
+            <Rent contract={contract} signer={signer} address={address} />
+          }
+        />
+        <Route
+          path="/unwrap"
+          element={
+            <Unwrap contract={contract} signer={signer} address={address} />
+          }
+        />
       </Routes>
     </div>
   );

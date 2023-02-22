@@ -10,13 +10,28 @@ const Navbar = (props) => {
     <div className="navbar">
       <Link to="/" className="nav--home">
         <img className="nav--logo" src={logo} />
-        <h1>EzCombo</h1>
+        <h1>EzRent</h1>
       </Link>
 
       <ul>
         <li>
-          <Link to="/combo" className="nav--link">
-            Combo
+          <Link to="/wrap" className="nav--link">
+            Wrap
+          </Link>
+        </li>
+        <li>
+          <Link to="/approve" className="nav--link">
+            Approve
+          </Link>
+        </li>
+        <li>
+          <Link to="/rent" className="nav--link">
+            Rent
+          </Link>
+        </li>
+        <li>
+          <Link to="/unwrap" className="nav--link">
+            Unwrap
           </Link>
         </li>
         <li>

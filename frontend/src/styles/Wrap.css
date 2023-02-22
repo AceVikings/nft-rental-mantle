@@ -1,0 +1,66 @@
+.input-address {
+  width: 80%;
+  height: 25px;
+  text-indent: 10px;
+  font-size: 20px;
+}
+
+.wrap-header {
+  color: whitesmoke;
+  font-family: monospace;
+  font-size: 48px;
+}
+
+.wrap-h2 {
+  color: whitesmoke;
+  font-family: monospace;
+  font-size: 28px;
+}
+
+.nft-button {
+  margin-top: 20px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  color: hotpink;
+  width: 125px;
+  height: 35px;
+  border-style: solid;
+  border-color: hotpink;
+  border-width: 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.nft-button:hover {
+  background-color: hotpink;
+  color: #222222;
+}
+
+.wrap-button {
+  margin-top: 20px;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  color: hotpink;
+  width: 100px;
+  height: 35px;
+  border-style: solid;
+  border-color: hotpink;
+  border-width: 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.wrap-button:hover {
+  background-color: hotpink;
+  color: #222222;
+}
+
+.unwrap {
+  width: 120px;
+}

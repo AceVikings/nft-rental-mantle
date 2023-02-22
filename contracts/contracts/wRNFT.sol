@@ -65,6 +65,7 @@ contract wRNFT is ERC721EnumerableUpgradeable {
             block.timestamp,
             approvedRenter[tokenId].duration
         );
+        delete approvedRenter[tokenId];
     }
 
     function unWrap(uint tokenId) external notRented(tokenId) {
@@ -88,7 +89,7 @@ contract wRNFT is ERC721EnumerableUpgradeable {
         ) {
             return rentalInfo[tokenId].renter;
         } else {
-            super.ownerOf(tokenId);
+            return tokenOwner[tokenId];
         }
     }
 }
