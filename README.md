@@ -2,7 +2,7 @@
 
 ### Demo - click on the image below
 
-[![UI](screenshots/1.png)](https://www.youtube.com/watch?v=0i36L1_Ey4k "Demo Video")
+[![UI](screenshots/1.png)](https://youtu.be/LsF8dxHhSLQ "Demo Video")
 
 Wrapper deployed on mantle testnet: 0xd24Adb84B1E7e3FD97505b6dB2579265ed7D96B8
 
